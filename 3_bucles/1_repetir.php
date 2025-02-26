@@ -1,4 +1,4 @@
 <?php
-for ($i = 1; $i <= 10; $i++) {
+for ($i = 1; $i <ifcd0210= 10; $i++) {
     echo "hola mundo ";
 }
