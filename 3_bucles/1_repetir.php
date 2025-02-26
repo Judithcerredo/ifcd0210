@@ -1,4 +1,4 @@
 <?php
 for ($i = 1; $i <= 10; $i++) {
-    echo "hola mundo ";
+    echo "hola mundo <br>";
 }
