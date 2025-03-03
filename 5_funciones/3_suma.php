@@ -8,7 +8,7 @@
  */
 
 
- function suma($num1, $num2){
+function suma($num1, $num2){
     echo "La suma es: " . ($num1 + $num2) . "<br>";
  }
 suma(5,15);

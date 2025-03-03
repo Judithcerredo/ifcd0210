@@ -8,13 +8,15 @@ Crear una función llamada saludar que recibe la hora en formato 0-24:
 
 function saludar($hora){
     if($hora >=6&&$hora<12){
-        return "Buenos días!<br>";
+        echo "Buenos días!<br>";
     }elseif ($hora >=12&&$hora<20) {
-        return "Buenas tardes!<br> ";
+        echo "Buenas tardes!<br> ";
     }else{
-        return "Buenas noches!<br>";
+        echo "Buenas noches!<br>";
     }
 }
 
-echo saludar(8);
-echo saludar(20);
+saludar(8);
+saludar(20);
+saludar(23);
+saludar(17);
