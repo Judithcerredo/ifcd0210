@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="./procesar.php" method="post">
+        <label for="email">Email: </label><br>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="contraseña">Contraseña: </label>
+        <br>
+        <input type="password" name="contraseña" id="contraseña">
+        <br>
+        <p>Departamento:</p>
+        <input type="radio" name="Departamento" id="Compras" value="Compras">
+        <label for="Compras">Compras</label>
+        <br>
+        <input type="radio" name="Departamento" id="Calidad" value="Calidad">
+        <label for="Calidad">Calidad</label>
+        <br>
+        <input type="radio" name="Departamento" id="Atc" value="Atc">
+        <label for="Atc">Atc</label>
+        <br><br>
+        <label for="Comentario">Comentario: </label>
+        <br>
+        <input type="text" name="Comentario" id="Comentario">
+        <br><br>
+        
+        
+        <button type="submit">Enviar formulario</button>
+    </form>
+</body>
+
+</html>
