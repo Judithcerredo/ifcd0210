@@ -11,8 +11,6 @@ Pista: la función isset($variable), nos permite comprobar si una variable está
 
 // Comprobar si existen num1 y num2, dentro de $_GET, si existen, llamar a la función suma, previamente definida. Si no existen-> echo 'Por favor especifica num1 y num2.
 
-
-
 function suma($num1, $num2){
     $suma = $num1 + $num2;
     return "La suma es: $suma";
