@@ -69,6 +69,23 @@ function mostrarPokemon()
 function filtrarPokemon($tipo)
 {
     global $arrayPokemon;
+    
+    echo "<ul>";
+    $filtropokemon = array_filter($arrayPokemon, function($pokemon) use ($tipo) {
+        return $pokemon['tipo'] === $tipo;
+    });
+
+    if (count($filtropokemon) > 0) {
+        foreach ($filtropokemon as $pokemon) {
+            echo "<li>$pokemon[id]: $pokemon[nombre] | $pokemon[tipo] </li>";
+        }
+    } else {
+        echo "<li>No se encontraron Pokémon de tipo $tipo.</li>";
+    }
+    echo "</ul>";
+
+    
+
 
 }
 ?>
@@ -97,17 +114,3 @@ function filtrarPokemon($tipo)
 </html>
 
 
-//     echo "<ul>";
-//     $filtropokemon = array_filter($arrayPokemon, function($pokemon) use ($tipo) {
-//         return $pokemon['tipo'] === $tipo;
-//     });
-
-//     if (count($filtropokemon) > 0) {
-//         foreach ($filtropokemon as $pokemon) {
-//             echo "<li>$pokemon[id]: $pokemon[nombre] | $pokemon[tipo] </li>";
-//         }
-//     } else {
-//         echo "<li>No se encontraron Pokémon de tipo $tipo.</li>";
-//     }
-//     echo "</ul>";
-// 
